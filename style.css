@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Monoton&display=swap");
+
+@font-face {
+  font-family: RetroCool;
+  src: url(./assets/RetroCoolRegular-rgV2O.ttf);
+}
+
+body {
+  background-color: hotpink;
+  color: black;
+
+  font-family: "RetroCool", sans-serif;
+  font-size: 16px;
+
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .bg-video {
+    position: fixed;
+    z-index: -99;
+    width: 100%;
+    height: 100%;
+  }
+
+  .backdrop {
+    position: fixed;
+    z-index: -98;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .contenty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-size: 8rem;
+    color: lime;
+    text-shadow: orangered 0 0 20px, lime 0 0 40px, blueviolet 0 0 60px,
+      orangered 0 0 80px;
+
+    animation: beat 1s infinite ease-in-out, swing 3s infinite ease-in-out;
+
+    .small {
+      font-size: 4rem;
+      text-align: center;
+    }
+  }
+}
+
+@keyframes swing {
+  0% {
+    transform: rotate(2deg);
+  }
+
+  50% {
+    transform: rotate(-2deg);
+  }
+
+  100% {
+    transform: rotate(2deg);
+  }
+}
+
+@keyframes beat {
+  0% {
+    scale: 1;
+  }
+
+  40% {
+    scale: 1;
+  }
+
+  50% {
+    scale: 1.2;
+  }
+
+  60% {
+    scale: 1;
+  }
+
+  100% {
+    scale: 1;
+  }
+}
