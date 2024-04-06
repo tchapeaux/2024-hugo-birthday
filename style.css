@@ -41,11 +41,10 @@ body {
     align-items: center;
 
     font-size: 8rem;
-    color: lime;
-    text-shadow: orangered 0 0 20px, lime 0 0 40px, blueviolet 0 0 60px,
-      orangered 0 0 80px;
+    color: gold;
+    text-shadow: goldenrod 0 0 20px, blueviolet 0 0 40px, orangered 0 0 80px;
 
-    animation: beat 1s infinite ease-in-out, swing 3s infinite ease-in-out;
+    animation: beat .75s infinite ease-in-out, swing 4s infinite ease-in-out;
 
     .small {
       font-size: 4rem;
@@ -78,7 +77,7 @@ body {
   }
 
   50% {
-    scale: 1.2;
+    scale: 1.1;
   }
 
   60% {
